@@ -1,0 +1,102 @@
+.input {
+  border: 1px solid #455e7c;
+  padding: 2px 2px 2px 2px;
+  font: 10pt Verdana, Arial, Helvetica, sans-serif;
+}
+
+.button {
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  font-size: 9pt;
+  font-weight: bold;
+  text-decoration: none;
+  text-align: center;
+  cursor: pointer;
+  background-color: #f0eff0;
+  color: #455e7c;
+  border: 1px solid #455e7c;
+  padding: 0px 4px 0px 4px;
+}
+
+.button:hover {
+  color: #000;
+}
+
+.login-content {
+  position: relative;
+  top: 175px;
+  text-align: left;
+  vertical-align: top;
+  width: 100%;
+  font-size: 9pt;
+}
+
+.login-content .login-label {
+  font-size: 9pt;
+}
+
+.login-content .footer {
+  font-size: 9pt;
+  font-weight: bold;
+}
+
+.border-column-main {
+  width: 48%;
+}
+
+.center-column-main {
+  width: 1%;
+}
+
+.error-message {
+  color: red;
+  font: 10pt Arial, Verdana, Helvetica, sans-serif;
+/*  background-image: url(../images/error-16x16.gif); */
+/*    background-repeat: no-repeat; */
+/*  padding-left: 16px;*/
+}
+
+.module-name {
+  padding: 0px;
+  margin: 0px;
+/*  padding-top: 17px;
+  padding-bottom: 10px; */
+  font-size: 12pt;
+  font-weight: bold;
+  font-style: italic;
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  text-transform: lowercase;
+  color: #455e7c;
+}
+
+.link-pesquisa {
+  color: #455e7c !important;
+  font-size: 9pt !important;
+}
+
+#logo-image {
+  padding: 0px;
+  margin: 0px;
+  padding-right: 10px;
+}
+
+LI {
+  list-style-type: none;
+}
+
+THEAD TH {
+  text-align: left;
+  background-color: transparent;
+}
+
+TFOOT {
+  text-align: right;
+}
+
+BODY {
+  background-image: url(../images/login_back_silver.gif);
+  background-repeat: repeat-x;
+  background-color: #fff;
+  font-family: Arial, Verdana, Helvetica, sans-serif;
+  padding: 0px;
+  margin: 0px;
+}

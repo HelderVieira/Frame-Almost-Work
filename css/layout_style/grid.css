@@ -1,0 +1,42 @@
+@CHARSET "UTF-8";
+
+table.datatable {
+    width: 100%;
+    border-width: 0 0 0 1px;
+    border-style: solid;
+    border-spacing: 0px;
+    margin-bottom: 0px;
+    margin-top: 10px;
+    border-color: #ccc;
+    line-height: 1.4em;
+}
+
+th {
+    padding-left: 6px;
+    font-weight: bold;
+    text-align: center;
+    background-color: #999;
+    color: #fff;
+}
+
+tr {
+    background-color: #fff;
+}
+
+tr:hover {
+    background-color: #e4ecec;
+}
+
+td {
+    padding-right: 12px;
+    padding-left: 6px;
+    font-size: 90%;
+    vertical-align: top;
+    border-width: 0px 1px 1px 0px;
+    border-style: solid;
+    border-color: #ccc;
+}
+
+a.datalink {
+    display:block;
+}

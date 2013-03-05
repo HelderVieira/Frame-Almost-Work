@@ -1,0 +1,74 @@
+<SCRIPT LANGUAGE = "JavaScript">
+<!--  
+
+    function isEmpty(form) {    
+        if (longSearch.ipt_name.value == "") {
+            longSearch.ipt_name.focus();
+            return false;
+        }
+        return true;
+    }
+
+    function goBack(form) {
+        
+        if (longSearch.<tpl=lst_name>.length == 0) {
+            window.close();
+            return;
+        }
+        
+        if (longSearch.<tpl=lst_name>.selectedIndex == -1) {
+            alert("<tpl=janelaErro>");
+            return false;
+        }
+
+        var selectedOption;
+        
+        selectedOption = opener.document.<tpl=form>;
+        selectedCode = form.<tpl=lst_name>[form.<tpl=lst_name>.selectedIndex].value;        
+       
+        selectedOption.<tpl=show_name>.value = form.<tpl=lst_name>[form.<tpl=lst_name>.selectedIndex].text;
+        selectedOption.<tpl=name>.value = form.<tpl=lst_name>[form.<tpl=lst_name>.selectedIndex].text;
+        selectedOption.<tpl=fk_name>.value=selectedCode;
+        
+        window.close();
+        return;
+    }
+  
+//-->
+</SCRIPT>
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<link rel="top" title="Home" href="#">
+<tpl=cssArea>
+<title>
+<tpl=titleArea>
+</title>
+</head>
+<body>
+
+<form name="longSearch" action="<tpl=action>" method="post">
+
+<!-- inicio Validacao -->
+<tpl=validacao>
+<!-- fim Validacao -->
+
+<tpl=formArea>
+ 
+<input type="hidden" name="show_name" value="<tpl=show_name>">
+<input type="hidden" name="name" value="<tpl=name>">
+<input type="hidden" name="fk_name" value="<tpl=fk_name>">
+<input type="hidden" name="form" value="<tpl=form>"> 
+   
+<!-- inicio resultado -->
+<br />
+<br />
+<tpl=resultado>
+<!-- fim resultado -->
+
+</form>
+
+</body>
+</html>

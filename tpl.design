@@ -1,0 +1,79 @@
+<!DOCTYPE html> 
+<html lang="pt-br">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta charset="utf-8">
+        <meta name="author" content="Helder Vieira">
+        <meta name="description" content="...">
+
+        <title><tpl=PROJECTNAME> - <tpl=titleArea></title>
+
+        <link rel="icon" type="image/png" href="images/mozilla-16.png" />
+
+        <tpl=cssArea>
+
+        <!--[if lte IE 8]>
+            <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+        
+        <script type="text/javascript" src="<tpl=PATH>/js/jquery-1.4.2.js"></script>
+        <script type="text/javascript" src="<tpl=PATH>/js/jquery-ui-1.8.1.custom.min.js"></script>
+        <script type="text/javascript" src="<tpl=PATH>/js/i18n/grid.locale-pt-br.js"></script>
+        <script type="text/javascript" src="<tpl=PATH>/js/jquery.jqGrid.min.js"></script>
+
+
+    </head>
+    <body>
+        <div id="geral">
+            <div id="top">            
+                <div id="menu_top"><tpl=userArea></div>
+                <div class="top1"><tpl=ORGANIZATIONNAME></div>
+                <div class="top2"><tpl=PROJECTNAME></div>
+            </div>
+
+            <tpl=menuArea>
+        
+            <div id="conteudo">
+            
+                <h2><tpl=titleArea></h2>
+                <tpl=instructionsArea>
+                <tpl=warningArea>
+                
+                <form id="defaultForm" name="defaultForm" action="<tpl=action>" method="<tpl=method>" 
+                    target="<tpl=target>">
+
+
+                    <tpl=formArea>
+
+                    <tpl=actionArea>
+
+                    <tpl=listArea>
+
+                    <tpl=paginationArea>
+
+                </form>           
+
+                <div id="rodape">
+                    <ul>                
+                        <tpl=linkArea>
+                    </ul>
+                    <p class="copyright"><tpl=copyrightArea></p>
+                    <p><tpl=lastUpdateArea></p>
+                </div>
+                
+            </div>
+
+            <script type="text/javascript">
+            
+            function resize(){
+                $('#conteudo').height($(window).height()-106);
+            }
+            window.onresize = resize;
+            $().ready(function(){
+                $(window).resize();
+            });
+
+            </script>
+
+    </body>
+</html>

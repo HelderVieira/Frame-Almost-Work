@@ -1,0 +1,72 @@
+@CHARSET "UTF-8";
+
+html {
+ 
+    overflow: hidden;
+ 
+}
+
+body {
+
+    padding:0px;
+    margin:0px;
+    background-attachment:fixed;
+    font:13px Verdana,Arial;
+    font-family: sans-serif;
+    background-color:#fafafa;
+ 
+}
+
+#geral{ 
+    width:100%;
+}
+
+ul {
+    margin-left: 20px;
+}
+
+fieldset {
+    border-bottom: none;
+    border-left: none;
+    border-right: none;
+    border-top: 20px solid;
+    padding-bottom: 30px;
+}
+
+legend {
+    font-weight: bold;
+    font-size: 14px;
+    color: gray;
+}
+
+ul.buttons {
+    text-align: left;
+    margin: 0;
+    margin-top: 10px;
+    padding: 0px;
+    list-style: none;
+    display: block;
+}
+
+ul.buttons li {
+    display: inline;
+    margin-right: 10px;
+}
+
+ul.pagination {
+    text-align: right;
+    margin: 0;
+    padding: 0px;
+    list-style: none;
+    display: block;
+}
+
+ul.pagination li {
+    display: inline;
+}
+
+#rodape {
+    margin-top: 220px;
+    text-align: center;
+    font-size: 70%;
+}

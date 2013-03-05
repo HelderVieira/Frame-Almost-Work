@@ -1,0 +1,6 @@
+<label class="deflabel">Email:</label>
+<form=email>
+<label for="nivel" class="deflabel">Nivel*:</label>
+<form=nivel>
+<input type="hidden" name="email" id="email" value="<form=email>">
+<input type="hidden" name="cod" id="cod" value="<form=cod>">

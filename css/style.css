@@ -1,0 +1,12 @@
+@CHARSET "ISO-8859-1";
+@import url(layout_style/default.css);
+@import url(layout_style/style_top.css);
+/*@import url(layout_style/style_menu.css);*/
+@import url(layout_style/style_conteudo.css);
+@import url(layout_style/style_rodape.css);
+@import url(layout_style/formularios.css);
+@import url(smoothness/jquery-ui-1.8.1.custom.css);
+
+
+
+

@@ -1,0 +1,17 @@
+<label for="nome" class="deflabel">Nome*:</label>
+<input type="text" name="nome" id="nome" size="50" maxlength="60" value="<form=nome>">
+
+<label for="email" class="deflabel">Email*:</label>
+<input type="text" name="email" id="email" size="50" maxlength="255" value="<form=email>">
+
+<label for="userName" class="deflabel">Nome de usu&aacute;rio*:</label>
+<form=userName>
+
+<label for="passWord" class="deflabel">Senha**:</label>
+<input type="password" name="passWord" id="passWord" size="20" maxlength="12">
+<label for="confirm" class="deflabel">Confirma&ccedil;&atilde;o**:</label>
+<input type="password" name="confirm" id="confirm" size="20" maxlength="12">
+
+<label for="nivel" class="deflabel">Nivel*:</label>
+<form=nivel>
+<input type="hidden" name="cod" id="cod" value="<form=cod>">

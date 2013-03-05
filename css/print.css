@@ -1,0 +1,115 @@
+/* 
+    Document   : print
+    Created on : 07/07/2010, 14:37:32
+    Author     : Bruno
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+/* 
+   TODO customize this sample style
+   Syntax recommendation http://www.w3.org/TR/REC-CSS2/
+*/
+
+root {
+    display: block;
+}
+
+@media print {
+
+    * {
+        margin: 0px;
+        padding: 0px;
+        border: 0px solid white !important;
+        font-family: sans-serif;
+        color: black;
+    }
+
+    nav { 
+        display: none;
+    }
+
+    div#menu_top {
+        font-size: 70%;
+    }
+
+    #btSair {
+        display: none;
+    }
+
+    ul.buttons {
+        display: none !important;
+    }
+
+    input[type="button"] {
+        display: none;
+    }
+
+    input[type="submit"] {
+        display: none;
+    }
+
+    form {
+        border: 0px !important;
+        margin: 0px !important;
+        padding: 0px !important;
+    }
+    
+    div#conteudo {
+        overflow: visible;
+        height: auto !important;
+    }
+
+    div#conteudo p {
+        font-size: 70%;
+    }
+
+    div#rodape {
+        margin-top: 5px !important;
+    }
+
+    table.datatable {
+        width: 100%;
+        border-width: 0 0 0 1px !important;
+        border-style: solid;
+        border-spacing: 0px;
+        margin-bottom: 0px;
+        border-color: #000 !important;
+        line-height: 1.4em;
+    }
+
+    th {
+        font-weight: bold;
+        text-align: center;
+        background-color: #fff;
+        color: #000 !important;
+        font-size: 80% !important;
+
+        border-width: 1px 1px 1px 0px !important;
+        border-style: solid;
+        border-color: #000 !important;
+    }
+
+    tr {
+        background-color: #fff;
+    }
+
+    td {
+        font-size: 90%;
+        vertical-align: top;
+        border-width: 0px 1px 1px 0px !important;
+        border-style: solid;
+        border-color: #000 !important;
+    }
+
+    a.datalink {
+        display:block;
+        text-decoration: none;
+        font-size: 80%;
+    }
+
+
+
+
+}
+

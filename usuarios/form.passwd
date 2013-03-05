@@ -1,0 +1,9 @@
+<label for="oldPassWord" class="deflabel">Senha atual*:</label>
+<input type="password" name="oldPassWord" id="oldPassWord" size="20" maxlength="12">
+
+<label for="newPassWord" class="deflabel">Nova senha*:</label>
+<input type="password" name="newPassWord" id="newPassWord" size="20" maxlength="12">
+
+<label for="confirm" class="deflabel">Confirma&ccedil;&atilde;o*:</label>
+<input type="password" name="confirm" id="confirm" size="20" maxlength="12">
+

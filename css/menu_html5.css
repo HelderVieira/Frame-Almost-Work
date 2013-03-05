@@ -1,0 +1,76 @@
+nav ul, #nav li, #nav h2 {
+    font-size: 8pt;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+#nav h2 {
+	font-size: 8pt;
+}
+
+#nav {
+	font-size: 8pt;
+	background: #e3e3e3;
+	border-bottom: 1px solid #ccc;
+}
+
+#nav>li {
+	position: relative;
+	display: inline-block;
+	vertical-align: top;
+	border-right: 1px solid #eee;
+	/* for IE6/7 */
+	display: inline;
+}
+
+#nav a {
+	display: block;
+	padding: 0 5px;
+	color: #000;
+	text-decoration: none;
+}
+
+#nav a:hover,#nav a:focus {
+	background: #eee;
+}
+
+#nav h2 a {
+	display: block;
+	padding: 5px 8px;
+	border-right: 1px solid #ccc;
+	background: none;
+	text-decoration: none;
+}
+
+#nav h2 a:hover,#nav h2 a:focus {
+	text-decoration: underline;
+}
+
+.submenu {
+	position: absolute;
+	left: -2px;
+	z-index: 0;
+	opacity: 0;
+	white-space: nowrap;
+	background: #fff;
+	border-radius: 5px;
+	border-radius: 0 0 5px 5px;
+	border: 2px solid #eee;
+	border-top: 1px solid #ccc;
+}
+
+.submenu li {
+	height: 0;
+	line-height: 25px;
+	background: #fff;
+}
+
+#nav>li:hover .submenu,#nav>li.focus .submenu {
+	z-index: 10;
+	opacity: 1;
+}
+
+#nav>li:hover .submenu li,#nav>li.focus .submenu li {
+	height: 25px;
+}
